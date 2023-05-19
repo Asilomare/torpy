@@ -201,12 +201,12 @@ class TorConsensus:
         self._fallbacks = fallbacks or DirectoryList.default_fallbacks()
         logger.debug('Loaded %i fallbacks dir', self._fallbacks.total)
 
-        self._cache_storage = cache_storage# or TorCacheDirStorage()
-        self._document = self._cache_storage.load_document(NetworkStatusDocument)
-        if self._document:
-            self._document.link_consensus(self)
-            logger.debug('Loaded %i consensus routers', len(self._document.routers))
-        self._certs = self._cache_storage.load_document(DirKeyCertificateList)
+        #self._cache_storage = cache_storage or TorCacheDirStorage()
+        #self._document = self._cache_storage.load_document(NetworkStatusDocument)
+        #if self._document:
+        #    self._document.link_consensus(self)
+        #    logger.debug('Loaded %i consensus routers', len(self._document.routers))
+        #self._certs = self._cache_storage.load_document(DirKeyCertificateList)
 
         self._dir_guard_ttl = self._dir_guard = self._dir_circuit = None
 
