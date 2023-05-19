@@ -1,3 +1,9 @@
+# FORK CHANGES
+
+This verison of the library can be run in AWS LAMBDA
+
+This version also merged this pull reques, "https://github.com/torpyorg/torpy/pull/51"
+
 Torpy ![Python Versions] [![Build Status](https://travis-ci.com/torpyorg/torpy.svg?branch=master)](https://travis-ci.com/torpyorg/torpy) [![Build status](https://ci.appveyor.com/api/projects/status/14l6t8nq4tvno1pg?svg=true)](https://ci.appveyor.com/project/jbrown299/torpy) [![Coverage Status](https://coveralls.io/repos/github/torpyorg/torpy/badge.svg?branch=master)](https://coveralls.io/github/torpyorg/torpy?branch=master)
 =====
 
