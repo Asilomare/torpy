@@ -85,7 +85,7 @@ class MyHTTPConnectionPool(HTTPConnectionPool):
             host=self.host,
             port=self.port,
             timeout=self.timeout.connect_timeout,
-            strict=self.strict,
+            strict=True,
             **self.conn_kw,
         )
 
@@ -104,7 +104,7 @@ class MyHTTPSConnectionPool(HTTPSConnectionPool):
             host=self.host,
             port=self.port,
             timeout=self.timeout.connect_timeout,
-            strict=self.strict,
+            strict=True,
             **self.conn_kw,
         )
         logger.debug('[MyHTTPSConnectionPool] preparing...')
